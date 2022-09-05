@@ -1,16 +1,45 @@
-        <html>
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0" />
-        <title>Crio Feed</title>
-        <meta name="description" content="Crio Feed Website" />
-        <link rel="stylesheet" href="resources/css/index.css">
-        </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crio News Feed</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./resources/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light bg-light flex-column align-items-start">
+        <div id="color-pattern"></div>
+        <span class="navbar-brand pt-0 mb-0 h1">Crio News Feed</span>
+      </nav>
+    </div>
+    <hr />
 
-        <body>
+    <div class="container">
+        <div class="h6">Today</div>
+        <div class="p">The insights you need to keep ahead.</div>
+    </div>
 
-        <div class="h1">Write your code in this file</div>
-        <script src="resources/data/magazines.js"></script>
-        <script src="resources/js/index.js"></script>
-        </body>
-        </html>
+    <div class="accordion container" id="accordionExample"></div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module">
+        import {magazines} from "./resources/data/magazines.js"
+        import {generateFeed} from "./resources/js/index.js"
+        (async function(){
+                generateFeed(magazines);
+        })();
+    </script>
+  </body>
+</html>

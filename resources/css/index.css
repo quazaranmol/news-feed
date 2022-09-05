@@ -1,0 +1,38 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    padding: 0px 4rem;
+}
+
+#color-pattern{
+    /* position: absolute; */
+    width: 1.5rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+    /* left: 1px;
+    top: 16px; */
+    background: rgb(192,64,223);
+    background: linear-gradient(90deg, rgba(192,64,223,1) 10%, rgba(229,55,185,1) 90%);
+}
+
+.container .h6{
+    font-weight: 330;
+}
+
+.container .p{
+    opacity: 0.5;
+}
+
+.card-body .card-title{
+    font-size: medium;
+}
+
+.card-body .card-creation{
+    font-size: smaller;
+}
+
+.card-body .card-text{
+
+}
